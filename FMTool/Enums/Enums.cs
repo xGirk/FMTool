@@ -7,11 +7,4 @@
         Medium,
         Long
     }
-
-    public enum Position
-    {
-        Defenders,
-        Midfielders,
-        Forwards
-    }
 }

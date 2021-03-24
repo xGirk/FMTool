@@ -24,12 +24,12 @@ namespace FMTool.Models
                 formation.Add(new Position("Forwards", 5));
             }
 
-            FillBuckets(formation);
+            FillPositions(formation);
 
             PrintFormation(formation);
         }
 
-        private static void FillBuckets(List<Position> formation)
+        private static void FillPositions(List<Position> formation)
         {
             Random rand = new();
 
