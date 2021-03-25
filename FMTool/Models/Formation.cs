@@ -6,7 +6,7 @@ namespace FMTool.Models
     public static class Formation
     {
         
-        public static void GenerateFormation(bool advanced)
+        public static string GenerateFormation(bool advanced)
         {
             List<Position> formation = new();
             formation.Add(new Position("Defenders", 5));
@@ -26,7 +26,7 @@ namespace FMTool.Models
 
             FillPositions(formation);
 
-            PrintFormation(formation);
+            return PrintFormation(formation);
         }
 
         private static void FillPositions(List<Position> formation)
@@ -41,13 +41,14 @@ namespace FMTool.Models
             }
         }
 
-        private static void PrintFormation(List<Position> formation)
+        private static string PrintFormation(List<Position> formation)
         {
             List<int> output = new();
             foreach (var position in formation)
                 output.Add(position.CurrentPlayers);
 
-            Console.WriteLine($"Formation: " + string.Join("-", output));
+            var positions = $"Formation: " + string.Join("-", output);
+            return positions;
         }
 
     }

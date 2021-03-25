@@ -10,15 +10,15 @@ namespace FMTest
             Console.WriteLine(GetRandomPersonality());
             Console.WriteLine(GetRandomCareerGoal());
             Console.WriteLine("These are your three formations.");
-            GenerateFormation();
-            GenerateFormation();
-            GenerateFormation();
+            Console.WriteLine(GenerateFormation());
+            Console.WriteLine(GenerateFormation());
+            Console.WriteLine(GenerateFormation());
 
-            Console.WriteLine("These are your three advanced formations.");
+            Console.WriteLine("\nThese are your three advanced formations.");
             UseAdvancedFormations(true);
-            GenerateFormation();
-            GenerateFormation();
-            GenerateFormation();
+            Console.WriteLine(GenerateFormation());
+            Console.WriteLine(GenerateFormation());
+            Console.WriteLine(GenerateFormation());
         }
     }
 }

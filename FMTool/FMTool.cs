@@ -17,8 +17,8 @@ namespace FMTool
             set { _personalities = value; }
         }
 
-        private static List<CareerGoals> _careergoals;
-        public static List<CareerGoals> CareerGoals
+        private static List<CareerGoal> _careergoals;
+        public static List<CareerGoal> CareerGoals
         {
             get { return _careergoals == null ? LoadCareerGoals() : _careergoals; }
             set { _careergoals = value; }
@@ -34,14 +34,14 @@ namespace FMTool
             return JsonSerializer.Deserialize<List<Personality>>(json);
         }
 
-        public static List<CareerGoals> LoadCareerGoals()
+        public static List<CareerGoal> LoadCareerGoals()
         {
             string path = Path.Combine(
                  System.Environment.CurrentDirectory,
                  "Data",
                  "careergoals.json");
             var json = File.ReadAllText(path);
-            return JsonSerializer.Deserialize<List<CareerGoals>>(json);
+            return JsonSerializer.Deserialize<List<CareerGoal>>(json);
         }
 
         public static Personality GetRandomPersonality()
@@ -50,7 +50,7 @@ namespace FMTool
             return Personalities[roll];
         }
 
-        public static CareerGoals GetRandomCareerGoal()
+        public static CareerGoal GetRandomCareerGoal()
         {
             var roll = new Random().Next(CareerGoals.Count);
             return CareerGoals[roll];
@@ -61,9 +61,9 @@ namespace FMTool
             AdvancedFormations = advanced;
         }
 
-        public static void GenerateFormation()
+        public static string GenerateFormation()
         {
-            Formation.GenerateFormation(AdvancedFormations);
+            return Formation.GenerateFormation(AdvancedFormations);
         }
 
     }

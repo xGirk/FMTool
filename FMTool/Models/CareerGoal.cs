@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FMTool.Models
 {
-    public record Personality : JsonData
+    public record CareerGoal : JsonData
     {
         public override string ToString()
         {

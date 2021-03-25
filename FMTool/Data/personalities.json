@@ -125,5 +125,12 @@
     "AdvancedDescription": "Keep an eye on your youth prospects - they may grow too tall and need to be sold... ",
     "Difficulty": 8,
     "Length": 3
+  },
+  {
+    "Name": "Better for Heading",
+    "Description": "Only sign players that are bald.",
+    "AdvancedDescription": "",
+    "Difficulty": 8,
+    "Length": 3
   }
 ]

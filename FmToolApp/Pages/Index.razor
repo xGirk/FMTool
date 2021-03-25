@@ -1,0 +1,46 @@
+﻿@page "/"
+@using static FMTool.FMTool;
+
+<div>
+    <p>Formation : @Formation </p>
+
+    <button class="btn btn-primary" @onclick="SetFormation">Generate Formation</button>
+</div>
+<div>
+    <p>Career Goal : @CareerGoal </p>
+
+    <button class="btn btn-primary" @onclick="SetCareerGoal">Generate Career Goal</button>
+</div>
+<div>
+    <p>Personality : @Personality </p>
+
+    <button class="btn btn-primary" @onclick="SetPersonality">Generate Personality</button>
+</div>
+
+
+@code {
+    [Parameter]
+    public string Formation { get; set; }
+
+    [Parameter]
+    public string CareerGoal { get; set; }
+
+    [Parameter]
+    public string Personality { get; set; }
+
+    private void SetFormation()
+    {
+        UseAdvancedFormations(true);
+        Formation = GenerateFormation();
+    }
+
+    private void SetCareerGoal()
+    {
+        CareerGoal = GetRandomCareerGoal().ToString();
+    }
+
+    private void SetPersonality()
+    {
+        Personality = GetRandomPersonality().ToString();
+    }
+}

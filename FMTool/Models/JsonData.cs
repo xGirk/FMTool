@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FMTool.Models
 {
-    public record CareerGoals
+    public record JsonData
     {
         public string Name { get; set; }
         public string Description { get; set; }
