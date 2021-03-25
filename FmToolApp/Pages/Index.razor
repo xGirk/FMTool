@@ -1,19 +1,23 @@
 ﻿@page "/"
 @inject HttpClient Http
 
-<div class="container-fluid rounded">
+<div class="uk-container">
+    <div class="uk-heading-2xlarge uk-text-center">FM Story Tool</div>
 
     <Formation />
-    <Goal Goals="@Goals" />
-    <Goal Goals="@Goals" />
 
-    <div class="border border-0">
-        <br />
-        <button class="btn btn-primary" @onclick="GenerateAll">Generate</button>
+    <div class="uk-grid uk-grid-match uk-margin-remove uk-child-width-expand">
+        <Goal Data="@Goals" />
+        <Goal Data="@Goals" />
+        <Goal Data="@Goals" />
     </div>
+
+    <hr />
 </div>
 
 @code {
+
+    //<button class="uk-button uk-button-large uk-button-secondary uk-align-center" @onclick="GenerateAll">Generate</button>
 
     List<CareerGoal> Goals = new();
 
@@ -22,9 +26,4 @@
         Goals = (await Http.GetFromJsonAsync<CareerGoal[]>("https://xgirk.github.io/Data/careergoals.json")).ToList<CareerGoal>();
     }
 
-    private void GenerateAll()
-    {
-        //SetFormation();
-        //SetCareerGoal();
-    }
 }
