@@ -335,5 +335,12 @@
     "AdvancedDescription": "",
     "Difficulty": 3,
     "Length": 2
+  },
+  {
+    "Name": "What's a Scout?",
+    "Description": "You cannot hire scouts - you must use coaches to do any scouting you want.",
+    "AdvancedDescription": "",
+    "Difficulty": 3,
+    "Length": 2
   }
 ]
