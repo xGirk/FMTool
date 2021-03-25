@@ -18,6 +18,7 @@ jobs:
       # move to correct directory
       - run: |
           cd FmToolApp
+          ls
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
         run: dotnet publish FmToolApp.csproj -c Release -o release --nologo
