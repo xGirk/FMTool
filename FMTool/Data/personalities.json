@@ -104,5 +104,26 @@
     "AdvancedDescription": "You can pay agent fees/upfront fees still. So keep a small transfer budget.",
     "Difficulty": 10,
     "Length": 3
+  },
+  {
+    "Name": "Equality",
+    "Description": "Only sign players the same height as you.",
+    "AdvancedDescription": "Keep an eye on your youth prospects - they may grow too tall and need to be sold.",
+    "Difficulty": 7,
+    "Length": 3
+  },
+  {
+    "Name": "Giants",
+    "Description": "Only sign players the above your height.",
+    "AdvancedDescription": "Most youth prospects with likely be too short to play - you'll have to wait. ",
+    "Difficulty": 6,
+    "Length": 3
+  },
+  {
+    "Name": "Not Giants",
+    "Description": "Only sign players the below 5 feet tall.",
+    "AdvancedDescription": "Keep an eye on your youth prospects - they may grow too tall and need to be sold... ",
+    "Difficulty": 8,
+    "Length": 3
   }
 ]
