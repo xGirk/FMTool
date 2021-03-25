@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FMTool.Models
 {
-    public record Personality
+    public record CareerGoals
     {
         public string Name { get; set; }
         public string Description { get; set; }

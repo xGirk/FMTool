@@ -10,25 +10,50 @@ namespace FMTool
     {
         public static bool AdvancedFormations { get; set; } = false;
 
-        public static List<Personality> Personalities = new();
+        private static List<Personality> _personalities;
+        public static List<Personality> Personalities 
+        {
+            get { return _personalities == null ? LoadPersonalities() : _personalities; }
+            set { _personalities = value; }
+        }
+
+        private static List<CareerGoals> _careergoals;
+        public static List<CareerGoals> CareerGoals
+        {
+            get { return _careergoals == null ? LoadCareerGoals() : _careergoals; }
+            set { _careergoals = value; }
+        }
 
         public static List<Personality> LoadPersonalities()
         {
             string path = Path.Combine(
                  System.Environment.CurrentDirectory,
-                 "personalities",
+                 "Data",
                  "personalities.json");
             var json = File.ReadAllText(path);
-            return Personalities = JsonSerializer.Deserialize<List<Personality>>(json);
+            return JsonSerializer.Deserialize<List<Personality>>(json);
+        }
+
+        public static List<CareerGoals> LoadCareerGoals()
+        {
+            string path = Path.Combine(
+                 System.Environment.CurrentDirectory,
+                 "Data",
+                 "careergoals.json");
+            var json = File.ReadAllText(path);
+            return JsonSerializer.Deserialize<List<CareerGoals>>(json);
         }
 
         public static Personality GetRandomPersonality()
         {
-            if (Personalities.Count < 1)
-                LoadPersonalities();
-
             var roll = new Random().Next(Personalities.Count);
             return Personalities[roll];
+        }
+
+        public static CareerGoals GetRandomCareerGoal()
+        {
+            var roll = new Random().Next(CareerGoals.Count);
+            return CareerGoals[roll];
         }
 
         public static void UseAdvancedFormations(bool advanced)

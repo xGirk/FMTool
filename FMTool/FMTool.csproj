@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Personalities\personalities.json">
+    <None Update="Data\careergoals.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\personalities.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
