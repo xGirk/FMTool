@@ -3,344 +3,474 @@
     "Name": "Promise-Breaker",
     "Description": "You must break any promises you make to players.",
     "AdvancedDescription": "This only applies to player promises, not owners.",
-    "Difficulty": 3
+    "Difficulty": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Outright Liar",
     "Description": "You must break any promises you make to players. You must make at least 1 promise to any newly signed players.",
     "AdvancedDescription": "This only applies to player promises, not owners.",
-    "Difficulty": 7
+    "Difficulty": 7,
+    "Tag":"Personality"
   },
   {
     "Name": "Bonus Boy",
     "Description": "You must not have any bonuses in any player contract negotiations.",
     "AdvancedDescription": "This only counts in contract negotiations, you use bonuses/clauses when buying the player.",
-    "Difficulty": 2
+    "Difficulty": 2,
+    "Tag":"Transfer"
   },
   {
     "Name": "Indecisive Leader",
     "Description": "You must change your captain after every loss.",
     "AdvancedDescription": "This is only for competitive matches.",
-    "Difficulty": 9
+    "Difficulty": 9,
+    "Tag":"Personality"
   },
   {
     "Name": "Old is Gold",
     "Description": "You may not have any players under the age of 32 in your starting lineup.",
-    "Difficulty": 8
+    "Difficulty": 8,
+    "Tag":"Personality"
   },
   {
     "Name": "Age Squeeze",
     "Description": "Each season the minimum age of players that you can use increases by 1.",
     "AdvancedDescription": "The ages starts at 18. This is mainly for long saves.",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
-    "Name": "Age Squeeze 2",
+    "Name": "Age Squeezer",
     "Description": "You can only use players between 18 and 32. Each season the lower bound increases and the upper bound decreases by 1.",
     "AdvancedDescription": "This is mainly for long saves.",
     "Difficulty": 9,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "One Man Army",
     "Description": "You can only hire an assistant manager - no other coaches or medical staff.",
     "AdvancedDescription": "Scouting staff are allowed.",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Spanish Roots",
     "Description": "Every player you sign must be given a release clause.",
     "AdvancedDescription": "When negotiating contracts with existing players, you must give them a release clause too.",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "High Turnover",
     "Description": "You must accept every offer you recieve for players.",
     "AdvancedDescription": "",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Washed Up?",
     "Description": "Only sign 35 year old superstars that are out of contract.",
     "AdvancedDescription": "You must rely on your own youth intake beyond this.",
     "Difficulty": 6,
-    "Length": 2
+    "Length": 2,
+    "Tag":"Transfer"
   },
   {
     "Name": "The Real Slim Shady?",
     "Description": "Only sign players with the same name.",
     "AdvancedDescription": "This could be the same first name or same second name.",
     "Difficulty": 8,
-    "Length": 2
+    "Length": 2,
+    "Tag":"Transfer"
   },
   {
-    "Name": "Richs to Rags",
+    "Name": "Riches to Rags",
     "Description": "Take a club from rich to unsecure but stay successful.",
     "AdvancedDescription": "",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Everyone's a Right-Back?",
     "Description": "Every player in your team must naturally be a right back.",
     "AdvancedDescription": "",
     "Difficulty": 9,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Steve Bruce",
     "Description": "You must play players with light injuries and play most players out of position.",
     "AdvancedDescription": "",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Tight",
     "Description": "Don't pay any transfer fees for players - free signings only.",
     "AdvancedDescription": "You can pay agent fees/upfront fees still. So keep a small transfer budget.",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Equality",
     "Description": "Only sign players the same height as you.",
     "AdvancedDescription": "Keep an eye on your youth prospects - they may grow too tall and need to be sold.",
     "Difficulty": 7,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Giants",
     "Description": "Only sign players the above your height.",
     "AdvancedDescription": "Most youth prospects with likely be too short to play - you'll have to wait. ",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Not Giants",
     "Description": "Only sign players the below 5 feet tall.",
     "AdvancedDescription": "Keep an eye on your youth prospects - they may grow too tall and need to be sold... ",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Better for Heading",
     "Description": "Only sign players that are bald.",
     "AdvancedDescription": "",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Nuzlocke",
     "Description": "Long term injury = dead, release these players. You can only sign one player per window. You can only sign one player from each league throughout your save. Choose wisely.",
     "AdvancedDescription": "You cannot scout any players. Trust your gut.",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Overly Trusting",
     "Description": "Delegate all signings to staff, they will sort out contracts and incomings/outgoings.",
     "AdvancedDescription": "",
     "Difficulty": 10,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Retire the Shirt? Retire the Position.",
     "Description": "When a player retires for you, you cannot play a player in that position ever again - change your formation.",
     "AdvancedDescription": "For a simple challenge just retire the role used instead.",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Basque in the Blood",
     "Description": "You can only sign players born in the city/region of your club.",
     "AdvancedDescription": "",
     "Difficulty": 7,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "No Rest for the Wicked",
     "Description": "You must schedule a friendly if you have no competitive game.",
     "AdvancedDescription": "You must have at least 1 game scheduled for every week, even international breaks.",
     "Difficulty": 5,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Multicultural",
     "Description": "You must have at least 1 player from each continent in your starting lineup.",
     "AdvancedDescription": "",
     "Difficulty": 4,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Wolves it Up",
-    "Description": "Pick a country. You can only sign players from that country.",
+    "Description": "Pick a country. You can only sign players of that nationality.",
     "AdvancedDescription": "",
     "Difficulty": 2,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Believer",
     "Description": "You must swap your goalkeeper and striker around at half time of every cup game.",
     "AdvancedDescription": "",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Fast as Fuck",
     "Description": "Only sign players with 17+ pace.",
     "AdvancedDescription": "",
     "Difficulty": 2,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Professional Evolved Shootball",
     "Description": "Only sign \"Offbrand\" named players.",
     "AdvancedDescription": "e.g. Rolando instead of Ronaldo.",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Dog Eat Dog",
     "Description": "Release any players that end a match with a rating under 6.0",
     "AdvancedDescription": "",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Money Please?",
     "Description": "Offer out any player that gets a rating over 9.3 in a match for sale.",
     "AdvancedDescription": "",
     "Difficulty": 6,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Diamonds in the Rough",
     "Description": "You can only sign players from domestic leagues below you.",
     "AdvancedDescription": "",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Not Quite",
     "Description": "Only sign players with 14+ crossing. Only sign players under 5ft.",
     "AdvancedDescription": "",
     "Difficulty": 3,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Bad Judge of Character",
     "Description": "Pick your player with the lowest Leadership and Teamwork as your captain.",
     "AdvancedDescription": "",
     "Difficulty": 4,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "You're a Wizard",
     "Description": "Only sign players with first/second names from Harry Potter.",
     "AdvancedDescription": "",
     "Difficulty": 5,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "The Blind Leading the Blind",
     "Description": "Hide all attributes. Only use performances and analysts to guide your choices.",
     "AdvancedDescription": "",
     "Difficulty": 8,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Tinkerman",
     "Description": "Never let a player play 2 consecutive games. Rotate after each game.",
     "AdvancedDescription": "",
     "Difficulty": 9,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Some Men Just Want To Watch the World Burn",
     "Description": "Buy your nearest rivals best player every season. Release them.",
     "AdvancedDescription": "",
     "Difficulty": 4,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Learning on the Job",
     "Description": "Always have at least one 16 year old player in your starting lineup.",
     "AdvancedDescription": "",
     "Difficulty": 4,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Avengers Assemble",
     "Description": "Try and resign as many ex players and possible as coaches.",
     "AdvancedDescription": "",
     "Difficulty": 3,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Same Shit, Different Club",
     "Description": "When you move clubs, try and buy as many players from your previous club as possible.",
     "AdvancedDescription": "Release clauses may help with this.",
     "Difficulty": 7,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Transfer"
   },
   {
     "Name": "Rags to Riches",
     "Description": "Starting at a non-league club, aim to get a personal contract worth over 100k a week.",
     "AdvancedDescription": "This doesn't necessarily mean with the same club you start with.",
     "Difficulty": 1,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Mercenary",
     "Description": "When an offer from another club comes in - you have to accept the interview and take the job if they offer more money.",
     "AdvancedDescription": "This doesn't necessarily mean with the same club you start with.",
     "Difficulty": 5,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "One Team Man",
     "Description": "You cannot move to any other club in the same continent.",
     "AdvancedDescription": "",
     "Difficulty": 3,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "One Man Team",
     "Description": "Pick one player in your starting lineup - do everything you can to keep this player with you forever.",
     "AdvancedDescription": "If you move clubs you must bring the player with you.",
     "Difficulty": 7,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "International Hero",
     "Description": "You must pick a \"small\" nation, aim to become its manager, and win a trophy with them.",
     "AdvancedDescription": "",
     "Difficulty": 7,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Man of the World",
     "Description": "You must win a major tournament on each continent.",
     "AdvancedDescription": "",
     "Difficulty": 9,
-    "Length": 3
+    "Length": 3,
+    "Tag":"Personality"
   },
   {
     "Name": "Money Man",
     "Description": "Take a club from Insecure to Rich.",
     "AdvancedDescription": "",
     "Difficulty": 3,
-    "Length": 2
+    "Length": 2,
+    "Tag":"Personality"
   },
   {
     "Name": "What's a Scout?",
     "Description": "You cannot hire scouts - you must use coaches to do any scouting you want.",
     "AdvancedDescription": "",
     "Difficulty": 3,
-    "Length": 2
+    "Length": 2,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "I'm Fine With What I've Got",
+    "Description": "Never sign a player. Youth intake only.",
+    "AdvancedDescription": "",
+    "Difficulty": 6,
+    "Length": 3,
+    "Tag":"Transfer"
+  },
+  {
+    "Name": "Goal-Hungry",
+    "Description": "At the end of a season release every player that hasn't scored a goal.",
+    "AdvancedDescription": "",
+    "Difficulty": 7,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Stars in your Eyes",
+    "Description": "All players must be promised/given a Star Player role.",
+    "AdvancedDescription": "",
+    "Difficulty": 3,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Taskmaster",
+    "Description": "Only use players with low match sharpness.",
+    "AdvancedDescription": "",
+    "Difficulty": 6,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Overly Cautious",
+    "Description": "Instantly sub off any player that gets a yellow.",
+    "AdvancedDescription": "",
+    "Difficulty": 4,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Overrun in the Midfield",
+    "Description": "Delegate making substitutions to your Assistant manager .",
+    "AdvancedDescription": "",
+    "Difficulty": 3,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Reverse Loan Manager",
+    "Description": "You can only get players in on loan - no buying.",
+    "AdvancedDescription": "",
+    "Difficulty": 5,
+    "Length": 3,
+    "Tag":"Transfer"
+  },
+  {
+    "Name": "Your Club is My Club",
+    "Description": "You can only sign players from affiliate clubs.",
+    "AdvancedDescription": "",
+    "Difficulty": 8,
+    "Length": 3,
+    "Tag":"Transfer"
+  },
+  {
+    "Name": "Lowest in the League",
+    "Description": "Get your overall wage bill to be the lowest in the league",
+    "AdvancedDescription": "",
+    "Difficulty": 9,
+    "Length": 3,
+    "Tag":"Personality"
+  },
+  {
+    "Name": "Start As You Mean To Go On",
+    "Description": "Your current highest paid character is your new max wage - you cannot spend more on a single player's wages than that.",
+    "AdvancedDescription": "This is more of a challenge for small clubs than large ones.",
+    "Difficulty": 9,
+    "Length": 3,
+    "Tag":"Personality"
   }
 ]
