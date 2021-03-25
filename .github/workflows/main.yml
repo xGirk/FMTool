@@ -18,8 +18,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-
-    # publishes Blazor project to the release-folder
+    - run: |
+        cd FmToolApp 
+  # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish FMToolApp -c Release -o release --nologo
     
