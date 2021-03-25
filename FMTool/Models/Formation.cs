@@ -47,7 +47,7 @@ namespace FMTool.Models
             foreach (var position in formation)
                 output.Add(position.CurrentPlayers);
 
-            var positions = $"Formation: " + string.Join("-", output);
+            var positions = string.Join("-", output);
             return positions;
         }
 
