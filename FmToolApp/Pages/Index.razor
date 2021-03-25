@@ -16,6 +16,9 @@
 
     <button class="btn btn-primary" @onclick="SetPersonality">Generate Personality</button>
 </div>
+<div>
+    <button class="btn btn-primary" @onclick="GenerateAll">Generate</button>
+</div>
 
 
 @code {
@@ -42,5 +45,12 @@
     private void SetPersonality()
     {
         Personality = GetRandomPersonality().ToString();
+    }
+
+    private void GenerateAll()
+    {
+        SetFormation();
+        SetCareerGoal();
+        SetPersonality();
     }
 }
