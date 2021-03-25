@@ -467,7 +467,7 @@
   },
   {
     "Name": "Start As You Mean To Go On",
-    "Description": "Your current highest paid character is your new max wage - you cannot spend more on a single player's wages than that.",
+    "Description": "Your current highest paid player is your new max wage - you cannot spend more on a single player's wages than that.",
     "AdvancedDescription": "This is more of a challenge for small clubs than large ones.",
     "Difficulty": 9,
     "Length": 3,

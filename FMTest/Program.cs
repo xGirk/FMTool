@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FMTool.Models;
+using System;
 using static FMTool.FMTool;
 
 namespace FMTest
@@ -8,9 +9,9 @@ namespace FMTest
         static void Main(string[] args)
         {
             Console.WriteLine("These are your three goals.");
-            Console.WriteLine(GetRandomCareerGoal());
-            Console.WriteLine(GetRandomCareerGoal());
-            Console.WriteLine(GetRandomCareerGoal());
+            Console.WriteLine(GetRandom(CareerGoals));
+            Console.WriteLine(GetRandom(CareerGoals));
+            Console.WriteLine(GetRandom(CareerGoals));
 
             Console.WriteLine("These are your three formations.");
             Console.WriteLine(GenerateFormation());

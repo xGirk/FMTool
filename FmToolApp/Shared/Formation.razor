@@ -1,0 +1,20 @@
+﻿<div class="d-block p-2 bg-primary text-white">
+    <h4>Formation : @formation </h4>
+    <input type="checkbox" @bind="@Advanced"> Use Advanced Formation
+    <br />
+    <button class="btn btn-primary" @onclick="SetFormation">Generate Formation</button>
+</div>
+
+@code {
+    [Parameter]
+    public string formation { get; set; }
+
+    [Parameter]
+    public bool Advanced { get; set; } = true;
+
+    private void SetFormation()
+    {
+        AdvancedFormations = Advanced;
+        formation = GenerateFormation();
+    }
+}

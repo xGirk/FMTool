@@ -1,0 +1,31 @@
+﻿@inject HttpClient Http
+
+<div class="d-block p-2 bg-dark text-white" style="min-height: 210px;">
+    @if (@CareerGoal != null)
+    {
+        <h4>Career Goal : @CareerGoal.Name </h4>
+        <p>Description : @CareerGoal.Description </p>
+        <p>Extra Information : @CareerGoal.AdvancedDescription </p>
+        <p>Difficulty : @CareerGoal.Difficulty </p>
+    }
+    else
+    {
+        <h4>Career Goal :  </h4>
+    }
+    <br />
+
+    <button class="btn btn-primary" @onclick="SetCareerGoal">Generate Career Goal</button>
+</div>
+
+@code {
+
+    [Parameter]
+    public List<CareerGoal> Goals { get; set; }
+
+    public CareerGoal CareerGoal { get; set; }
+
+    private void SetCareerGoal()
+    {
+        CareerGoal = GetRandom(Goals);
+    }
+}

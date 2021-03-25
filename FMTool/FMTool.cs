@@ -12,6 +12,7 @@ namespace FMTool
         public static string CareerGoalLocation { get; set; }
 
         private static List<CareerGoal> _careergoals;
+
         public static List<CareerGoal> CareerGoals
         {
             get { return _careergoals == null ? LoadCareerGoals() : _careergoals; }
@@ -28,6 +29,18 @@ namespace FMTool
             return JsonSerializer.Deserialize<List<CareerGoal>>(json);
         }
 
+        /// <summary>
+        /// Given a list of type T returns a random element from it.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <returns></returns>
+        public static T GetRandom<T>(List<T> list)
+        {
+            var roll = new Random().Next(list.Count);
+            return list[roll];
+        }
+
         public static CareerGoal GetRandomCareerGoal()
         {
             var roll = new Random().Next(CareerGoals.Count);
@@ -38,6 +51,5 @@ namespace FMTool
         {
             return Formation.GenerateFormation(AdvancedFormations);
         }
-
     }
 }

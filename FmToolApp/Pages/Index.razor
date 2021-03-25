@@ -1,56 +1,30 @@
 ﻿@page "/"
-@using static FMTool.FMTool;
+@inject HttpClient Http
 
-<div>
-    <p>Formation : @Formation </p>
+<div class="container-fluid rounded">
 
-    <button class="btn btn-primary" @onclick="SetFormation">Generate Formation</button>
+    <Formation />
+    <Goal Goals="@Goals" />
+    <Goal Goals="@Goals" />
+
+    <div class="border border-0">
+        <br />
+        <button class="btn btn-primary" @onclick="GenerateAll">Generate</button>
+    </div>
 </div>
-<div>
-    <p>Career Goal : @CareerGoal </p>
-
-    <button class="btn btn-primary" @onclick="SetCareerGoal">Generate Career Goal</button>
-</div>
-<div>
-    <p>Personality : @Personality </p>
-
-    <button class="btn btn-primary" @onclick="SetPersonality">Generate Personality</button>
-</div>
-<div>
-    <button class="btn btn-primary" @onclick="GenerateAll">Generate</button>
-</div>
-
 
 @code {
-    [Parameter]
-    public string Formation { get; set; }
 
-    [Parameter]
-    public string CareerGoal { get; set; }
+    List<CareerGoal> Goals = new();
 
-    [Parameter]
-    public string Personality { get; set; }
-
-    private void SetFormation()
+    protected override async Task OnInitializedAsync()
     {
-        AdvancedFormations = true;
-        Formation = GenerateFormation();
-    }
-
-    private void SetCareerGoal()
-    {
-        CareerGoal = GetRandomCareerGoal().ToString();
-    }
-
-    private void SetPersonality()
-    {
-        Personality = GetRandomPersonality().ToString();
+        Goals = (await Http.GetFromJsonAsync<CareerGoal[]>("https://xgirk.github.io/Data/careergoals.json")).ToList<CareerGoal>();
     }
 
     private void GenerateAll()
     {
-        SetFormation();
-        SetCareerGoal();
-        SetPersonality();
+        //SetFormation();
+        //SetCareerGoal();
     }
 }
