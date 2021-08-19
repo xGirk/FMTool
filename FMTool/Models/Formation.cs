@@ -5,7 +5,6 @@ namespace FMTool.Models
 {
     public static class Formation
     {
-        
         public static string GenerateFormation(bool advanced)
         {
             List<Position> formation = new();
@@ -50,6 +49,5 @@ namespace FMTool.Models
             var positions = string.Join("-", output);
             return positions;
         }
-
     }
 }

@@ -1,27 +1,16 @@
-﻿@inject HttpClient Http
-
-<div class="uk-card uk-card-small uk-text-center uk-padding-remove uk-height-large">
+﻿<div class="uk-card uk-card-small uk-text-center uk-padding-remove uk-height-large">
     <div class=" uk-card-header">
-        @if (CareerGoal != null && CareerGoal.Name != null)
-        {
-            <h4 class="uk-card-title">@CareerGoal.Name</h4>
-        }
+        <h2 class="uk-card-title">@CareerGoal?.Name</h2>
     </div>
     <div class="uk-card-body">
-        @if (CareerGoal != null && CareerGoal.Description != null)
-        {
-            <p>@CareerGoal.Description </p>
-        }
-        @if (CareerGoal != null && CareerGoal.AdvancedDescription != null && CareerGoal.AdvancedDescription != "")
-        {
-            <p>@CareerGoal.AdvancedDescription </p>
-        }
-        @if (CareerGoal != null && CareerGoal.Name != null)
-        {
-            <p>Difficulty : @CareerGoal.Difficulty </p>
-        }
+        <p>@CareerGoal?.Description </p>
+        <p>@CareerGoal?.AdvancedDescription </p>
     </div>
     <div class="uk-card-footer uk-position-absolute uk-position-bottom-center">
+        @if (CareerGoal != null)
+        {
+            <p>Difficulty : @CareerGoal?.Difficulty </p>
+        }
         <button class="uk-button uk-button-primary" @onclick="SetCareerGoal">Generate Career Goal</button>
     </div>
 </div>

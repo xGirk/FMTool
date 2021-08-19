@@ -1,29 +1,13 @@
 ﻿@page "/"
 @inject HttpClient Http
 
-<div class="uk-container">
+<div class="uk-container uk-container-xlarge">
     <div class="uk-heading-2xlarge uk-text-center">FM Story Tool</div>
-
-    <Formation />
-
-    <div class="uk-grid uk-grid-match uk-margin-remove uk-child-width-expand">
-        <Goal Data="@Goals" />
-        <Goal Data="@Goals" />
-        <Goal Data="@Goals" />
-    </div>
-
-    <hr />
+    <Formation/>
+    <Goals/>
 </div>
 
 @code {
 
-    //<button class="uk-button uk-button-large uk-button-secondary uk-align-center" @onclick="GenerateAll">Generate</button>
-
-    List<CareerGoal> Goals = new();
-
-    protected override async Task OnInitializedAsync()
-    {
-        Goals = (await Http.GetFromJsonAsync<CareerGoal[]>("https://xgirk.github.io/Data/careergoals.json")).ToList<CareerGoal>();
-    }
 
 }

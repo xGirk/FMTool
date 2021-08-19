@@ -4,8 +4,10 @@
     <div class="uk-card-header">
         <h4 class="uk-card-title">Formation : @formation</h4>
     </div>
-    <div class="uk-card-body">
+
+    <div class="uk-button-group">
         <button class="uk-button uk-button-primary" @onclick="SetFormation">Generate Formation</button>
+        <button class="uk-button uk-button-secondary" @onclick="ToggleAdvanced">Advanced</button>
     </div>
 </div>
 
@@ -20,7 +22,11 @@
 
     private void SetFormation()
     {
-        AdvancedFormations = Advanced;
-        formation = GenerateFormation();
+        formation = FMTool.Models.Formation.GenerateFormation(Advanced);
+    }
+
+    private void ToggleAdvanced()
+    {
+        Advanced = !Advanced;
     }
 }

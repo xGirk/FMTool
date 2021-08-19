@@ -1,0 +1,23 @@
+﻿@inject HttpClient Http
+
+<div>
+    <div class="uk-grid uk-grid-match uk-margin-remove uk-child-width-expand">
+        @for (int i = 0; i < Challenges; i++)
+        {
+            <Goal Data="@GoalList" />
+        }
+    </div>
+    <div class="uk-text-center">
+        <input type="range" min="1" max="5" step="1" @bind="@Challenges"/>
+    </div>
+</div>
+
+@code {
+    int Challenges { get; set; } = 3;
+    List<CareerGoal> GoalList = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        GoalList = (await Http.GetFromJsonAsync<CareerGoal[]>("https://xgirk.github.io/Data/careergoals.json")).ToList<CareerGoal>();
+    }
+}
