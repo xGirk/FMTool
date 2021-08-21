@@ -7,7 +7,10 @@
             <Goal Data="@GoalList" />
         }
     </div>
-    <div class="uk-text-center">
+     <div class="centered">
+        <input type="text" @bind="@Route" class="centered" style="min-width: 400px;"/>
+    </div>
+    <div class="centered">
         <input type="range" min="1" max="5" step="1" @bind="@Challenges"/>
     </div>
 </div>
@@ -15,9 +18,10 @@
 @code {
     int Challenges { get; set; } = 3;
     List<CareerGoal> GoalList = new();
+    string Route { get; set; } = "https://xgirk.github.io/Data/careergoals.json";
 
     protected override async Task OnInitializedAsync()
     {
-        GoalList = (await Http.GetFromJsonAsync<CareerGoal[]>("https://xgirk.github.io/Data/careergoals.json")).ToList<CareerGoal>();
+        GoalList = (await Http.GetFromJsonAsync<CareerGoal[]>(Route)).ToList<CareerGoal>();
     }
 }

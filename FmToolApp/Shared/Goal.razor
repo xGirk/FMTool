@@ -1,12 +1,12 @@
-﻿<div class="uk-card uk-card-small uk-text-center uk-padding-remove uk-height-large">
-    <div class=" uk-card-header">
+﻿<div class="uk-card uk-padding-remove centered" style="min-height:350px;max-height:550px;">
+    <div class="uk-card-header centered">
         <h2 class="uk-card-title">@CareerGoal?.Name</h2>
     </div>
-    <div class="uk-card-body">
+    <div class="uk-card-body centered">
         <p>@CareerGoal?.Description </p>
         <p>@CareerGoal?.AdvancedDescription </p>
     </div>
-    <div class="uk-card-footer uk-position-absolute uk-position-bottom-center">
+    <div class="uk-card-footer centered">
         @if (CareerGoal != null)
         {
             <p>Difficulty : @CareerGoal?.Difficulty </p>
@@ -15,11 +15,9 @@
     </div>
 </div>
 
-
 @code {
     [Parameter]
     public List<CareerGoal> Data { get; set; }
-
     public CareerGoal CareerGoal { get; set; }
 
     private void SetCareerGoal()

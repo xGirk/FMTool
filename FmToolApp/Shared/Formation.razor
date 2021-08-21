@@ -1,4 +1,4 @@
-﻿<hr class="uk-text-center">
+﻿<hr class="uk-text-center"/>
 
 <div class="uk-card uk-card-small uk-text-center">
     <div class="uk-card-header">
@@ -7,11 +7,11 @@
 
     <div class="uk-button-group">
         <button class="uk-button uk-button-primary" @onclick="SetFormation">Generate Formation</button>
-        <button class="uk-button uk-button-secondary" @onclick="ToggleAdvanced">Advanced</button>
+        <button class="uk-button @(Advanced ? "uk-button-secondary" : "uk-button-danger")" @onclick="ToggleAdvanced">@(Advanced ? "Advanced" : "Simple")</button>
     </div>
 </div>
 
-<hr class="uk-divider-small uk-text-center">
+<hr class="uk-divider-small uk-text-center"/>
 
 @code {
     [Parameter]
@@ -23,6 +23,11 @@
     private void SetFormation()
     {
         formation = FMTool.Models.Formation.GenerateFormation(Advanced);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        SetFormation();
     }
 
     private void ToggleAdvanced()
