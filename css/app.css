@@ -14,6 +14,52 @@ a, .btn-link {
     border-color: #1861ac;
 }
 
+.marked-blue {
+    outline: 2px dashed blue;
+}
+
+.marked-green {
+    outline: 2px dashed green;
+}
+
+.marked-red{
+    outline: 2px dashed red;
+}
+
+.marked-orange {
+    outline: 2px dashed orange;
+}
+
+.card {
+    min-height: 500px;
+    max-height: 500px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-header {
+    min-height: 70px;
+    max-height: 70px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.centered {
+    margin: auto;
+    text-align: center;
+}
+
+.card-body {
+    min-height: 300px;
+    max-height: 300px;
+    vertical-align:middle;
+}
+
+.card-footer{
+    min-height: 110px;
+    max-height: 110px;
+}
+
 .content {
     padding-top: 1.1rem;
 }
